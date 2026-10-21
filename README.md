@@ -83,11 +83,6 @@ Run the app, capture each page, save as `docs/screenshots/<page>.png`, then embe
 - Port busy → `npm run dev -- -p 3001`.
 - Windows PowerShell policy blocks npm → use `cmd` or Git Bash.
 
-## Team
-| Name | Role | Contribution |
-|---|---|---|
-| _Your name_ | _Role_ | _What you built_ |
-
 ## License
 MIT — see [LICENSE](LICENSE).
 
