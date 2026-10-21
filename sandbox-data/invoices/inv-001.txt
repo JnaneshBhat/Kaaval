@@ -1,0 +1,7 @@
+Invoice No: KC-2026-001
+Customer: Sri Lakshmi Cashew Traders (FICTIONAL)
+Amount (INR): 1,250,000
+Due Date: 2026-09-20
+Status: Unpaid
+Contact Email: accounts@srilakshmi.example
+Notes: 8 tonnes W320 kernels, delivered 2026-08-21.

@@ -1,0 +1,65 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model TaskPassport {
+  id        String   @id
+  name      String
+  objective String
+  status    String   @default("active")
+  config    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Approval {
+  id          String    @id
+  taskId      String
+  actionType  String
+  resource    String
+  recipient   String?
+  payloadHash String
+  payloadJson String
+  requester   String
+  reason      String
+  status      String    @default("pending")
+  createdAt   DateTime  @default(now())
+  decidedAt   DateTime?
+  consumedAt  DateTime?
+  expiresAt   DateTime
+
+  @@index([status])
+}
+
+model AuditEvent {
+  id          String   @id
+  timestamp   DateTime @default(now())
+  taskId      String
+  action      String
+  resource    String
+  decision    String
+  rule        String
+  reason      String
+  privacyJson String
+  result      String?
+  approvalId  String?
+  source      String   @default("live")
+  prevHash    String   @default("GENESIS")
+  hash        String   @default("")
+
+  @@index([taskId])
+  @@index([decision])
+}
+
+model ScenarioRun {
+  id          String   @id
+  scenarioId  String
+  taskId      String
+  outcomeJson String
+  createdAt   DateTime @default(now())
+}

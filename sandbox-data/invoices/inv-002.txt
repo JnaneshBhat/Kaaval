@@ -1,0 +1,7 @@
+Invoice No: KC-2026-002
+Customer: Konkan Nut House (FICTIONAL)
+Amount (INR): 640,500
+Due Date: 2026-10-30
+Status: Unpaid
+Contact Email: pay@konkannut.example
+Notes: 3 tonnes W240 kernels.

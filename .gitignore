@@ -1,0 +1,28 @@
+node_modules
+.next
+out
+.env
+.env.local
+prisma/*.db
+prisma/*.db-journal
+*.log
+test-results
+playwright-report
+sandbox-data/output/*
+!sandbox-data/output/.gitkeep
+uploads
+.DS_Store
+tsconfig.tsbuildinfo
+next-env.d.ts
+# Local SQLite databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Local environment files
+.env
+.env.*
+!.env.example
+# Local backups
+sandbox-data/backups/*
