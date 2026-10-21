@@ -90,3 +90,5 @@ Run the app, capture each page, save as `docs/screenshots/<page>.png`, then embe
 
 ## License
 MIT — see [LICENSE](LICENSE).
+
+
